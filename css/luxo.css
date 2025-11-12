@@ -3,37 +3,168 @@
     padding: 0;
     box-sizing: border-box;
 }
-.topo{
-    width: 100%;
-    height: 11vh;
-    background-color: #020b91;
-    font-size: 1.5rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.menu ul{
-    width: 100%;
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0e0e0e;
+  color: #f5f5f5;
+  overflow-x: hidden;
 }
-.menu ul li a{
-    color: #fff;
-    text-decoration: none;
+
+/* ====== TOPO ====== */
+.topo {
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 80px;
+  border-bottom: 2px solid #d40000;
 }
-img{
-    width: 100vw;
-    height: 70vh;
+
+.topo h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.8em;
+  letter-spacing: 2px;
 }
-.botao{
-    border-radius: 20px;
-    background-color: #3385e4;
-    border: none;
-    text-decoration: none;
-    text-align: center;
-    padding: 10px;
-    margin-top: 3vh;
-    font-family:  "Condiment", cursive;
-    font-size: large;
+
+.topo nav a {
+  color: #ccc;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 400;
+  transition: color 0.3s;
 }
+
+.topo nav a:hover {
+  color: #fff;
+}
+
+/* ====== HERO ====== */
+.hero {
+  background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url('../img/audi-banner.jpg') center/cover no-repeat;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.texto-hero h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.texto-hero p {
+  margin: 20px 0;
+  color: #ddd;
+  font-size: 1.1rem;
+}
+
+.botao {
+  background-color: #d40000;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
 .botao:hover {
-    box-shadow:0 8px 16px 0 #ffffffad
+  background-color: #fff;
+  color: #000;
+}
+
+/* ====== GALERIA ====== */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 50px;
+  padding: 80px 10%;
+}
+
+.carro {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #1a1a1a;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.carro img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.carro:hover img {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.carro:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 40px rgba(255,255,255,0.1);
+}
+
+.info {
+  padding: 25px;
+  text-align: left;
+}
+
+.info h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.info p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.preco {
+  display: block;
+  font-weight: bold;
+  color: #d40000;
+  margin-top: 5px;
+}
+
+.comprar {
+  margin-top: 15px;
+  background: transparent;
+  border: 1px solid #d40000;
+  color: #d40000;
+  padding: 10px 24px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.comprar:hover {
+  background-color: #d40000;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* ====== RODAPÉ ====== */
+footer {
+  background-color: #000;
+  color: #888;
+  text-align: center;
+  padding: 30px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
 }

@@ -1,39 +1,156 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.topo{
-    width: 100%;
-    height: 11vh;
-    background-color: #020b91;
-    font-size: 1.5rem;
+/* ----------------------------- */
+/* ESTILO GERAL */
+/* ----------------------------- */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  background: #f5f5f5;
+  overflow-x: hidden;
 }
-.menu ul{
-    width: 100%;
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
+
+h1, h2, h3 {
+  margin: 0;
 }
-.menu ul li a{
-    color: #fff;
-    text-decoration: none;
+
+/* ----------------------------- */
+/* CABEÇALHO */
+/* ----------------------------- */
+.cabecalho {
+  background: linear-gradient(90deg, #000000, #2a2a2a);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  animation: fadeDown 1s ease forwards;
 }
-img{
-    width: 100vw;
-    height: 70vh;
+
+.cabecalho h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
 }
-.botao{
-    border-radius: 20px;
-    background-color: #3385e4;
-    border: none;
-    text-decoration: none;
-    text-align: center;
-    padding: 10px;
-    margin-top: 3vh;
-    font-family:  "Condiment", cursive;
-    font-size: large;
+
+.cabecalho p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  opacity: 0.8;
 }
-.botao:hover {
-    box-shadow:0 8px 16px 0 #ffffffad
+
+/* ----------------------------- */
+/* SEÇÕES */
+/* ----------------------------- */
+.secao {
+  padding: 60px 80px;
+  text-align: center;
+  animation: fadeIn 1.2s ease;
+}
+
+.titulo-secao {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.titulo-secao::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #000;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* ----------------------------- */
+/* GRID DAS MARCAS */
+/* ----------------------------- */
+.grid-marcas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+  justify-items: center;
+}
+
+/* ----------------------------- */
+/* CARD DAS MARCAS */
+/* ----------------------------- */
+.card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  max-width: 320px;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin-top: 15px;
+  color: #111;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* ----------------------------- */
+/* CORES DIFERENTES POR SEÇÃO */
+/* ----------------------------- */
+.luxo {
+  background: #ececec;
+}
+
+.populares {
+  background: #fdfdfd;
+}
+
+.esportivas {
+  background: linear-gradient(180deg, #fff, #f1f1f1);
+}
+
+/* ----------------------------- */
+/* ANIMAÇÕES CSS3 */
+/* ----------------------------- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ----------------------------- */
+/* RODAPÉ */
+/* ----------------------------- */
+.rodape {
+  background: #000;
+  color: #ccc;
+  text-align: center;
+  padding: 25px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
 }
