@@ -3,51 +3,43 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-/* GERAL */
 body {
   background-color: #1e2a78;
   color: white;
   font-family: Arial, sans-serif;
   overflow-x: hidden;
 }
-
 h1 {
   font-family: "Monsieur La Doulaise", cursive;
   font-size: 3rem;
   text-align: center;
   color: #fff;
 }
-
-/* HEADER */
 .topo {
   background-color: #020b91;
   padding: 10px 0;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 10px #0000004d;
 }
-
 .menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
-
 .menu ul {
   display: flex;
   gap: 15px;
   list-style: none;
 }
-
 .menu a {
   color: white;
   text-decoration: none;
   padding: 8px 18px;
   border-radius: 20px;
+  border: none;
   background-color: #3385e4;
   transition: all 0.3s ease;
 }
-
 .menu a:hover {
   background-color: #60badd;
   box-shadow: 0 0 15px #60badd;
