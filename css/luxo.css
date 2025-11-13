@@ -72,7 +72,7 @@ h1 {
 }
 .texto-hero h2 {
   font-family: 'Oswald', sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -227,7 +227,7 @@ footer {
   }
   .texto-hero h2 {
     font-family: 'Oswald', sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: 2px;
     text-transform: uppercase;
   }
