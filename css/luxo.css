@@ -11,7 +11,7 @@ body {
 }
 h1 {
   font-family: 'Oswald', sans-serif;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   letter-spacing: 2px;
   color: #fff;
 }
@@ -19,10 +19,13 @@ h1 {
   background: #000;
   color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 15px 80px;
   border-bottom: 2px solid #d40000;
+}
+.nomeLoja{
+  margin: 10px;
 }
 .menu {
   display: flex;
@@ -60,7 +63,7 @@ h1 {
   color: #fff;
 }
 .hero {
-  background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url('../img/audi-banner.jpg') center/cover no-repeat;
+  background: #000;
   height: 85vh;
   display: flex;
   align-items: center;
@@ -69,7 +72,7 @@ h1 {
 }
 .texto-hero h2 {
   font-family: 'Oswald', sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -81,7 +84,7 @@ h1 {
 .botao{
   color: #fff;
   align-items: center;
-  padding: 15px 40px;
+  padding: 10px 20px;
   border-radius: 30px;
   background-color: #d40000;
   text-decoration: none;
@@ -139,11 +142,12 @@ h1 {
   background: transparent;
   border: 1px solid #d40000;
   color: #d40000;
-  padding: 10px 24px;
+  padding: 5px 12px;
   border-radius: 25px;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 .comprar:hover {
   background-color: #d40000;
@@ -157,4 +161,161 @@ footer {
   padding: 30px;
   font-size: 0.9rem;
   letter-spacing: 1px;
+}
+
+
+@media(max-width: 768px) and (min-width: 320px){
+  h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    color: #fff;
+  }
+  .topo {
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 80px;
+    border-bottom: none;
+  }
+  .nomeLoja{
+    margin: 10px;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .menu ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+  }
+  .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 4px 9px;
+    border-radius: 20px;
+    border: none;
+    background-color: #e43333;
+    transition: all 0.3s ease;
+  }
+  .menu a:hover {
+    background-color: #dd6060;
+    box-shadow: 0 0 15px #f0a3a3;
+    transform: scale(1.1);
+  }
+  .topo nav a {
+    color: #ccc;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 400;
+    transition: color 0.3s;
+  }
+  .topo nav a:hover {
+    color: #fff;
+  }
+  .hero {
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url('../img/audi-banner.jpg') center/cover no-repeat;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .texto-hero h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .texto-hero p {
+    margin: 20px 0;
+    color: #ddd;
+    font-size: 1.1rem;
+  }
+  .botao{
+    color: #fff;
+    align-items: center;
+    padding: 15px 40px;
+    border-radius: 30px;
+    background-color: #d40000;
+    text-decoration: none;
+  }
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 50px;
+    padding: 80px 10%;
+  }
+  .carro {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #1a1a1a;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+  .carro img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+  }
+  .carro:hover img {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+  .carro:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 40px rgba(255,255,255,0.1);
+  }
+  .info {
+    padding: 25px;
+    text-align: left;
+  }
+  .info h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  .info p {
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-bottom: 10px;
+  }
+  .preco {
+    display: block;
+    font-weight: bold;
+    color: #d40000;
+    margin-top: 5px;
+  }
+  .comprar {
+    margin-top: 15px;
+    background: transparent;
+    border: 1px solid #d40000;
+    color: #d40000;
+    padding: 5px 12px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  .comprar:hover {
+    background-color: #d40000;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  footer {
+    background-color: #000;
+    color: #888;
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+  
 }

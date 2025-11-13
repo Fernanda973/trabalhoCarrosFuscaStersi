@@ -176,16 +176,16 @@ p {
 }
 
 
-@media(max-width: 768px) and (min-width: 424px) {
+@media(max-width: 992px) and (min-width: 767px) {
   h1 {
     font-family: "Monsieur La Doulaise", cursive;
-    font-size: 1.6rem;
+    font-size: 1rem;
     text-align: center;
     color: #fff;
     float: inline-end;
   }
 
-  p {
+  .topo p {
     display: none;
   }
 
@@ -207,7 +207,7 @@ p {
 
   .menu ul {
     display: flex;
-    gap: 15px;
+    gap: 5px;
     list-style: none;
   }
 
@@ -341,16 +341,16 @@ p {
   }
 }
 
-@media(max-width: 425px) and (min-width: 499px) {
+@media(max-width: 768px) and (min-width: 320px) {
   h1 {
     font-family: "Monsieur La Doulaise", cursive;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-align: center;
     color: #fff;
     margin: 15px;
   }
 
-  p {
+  .topo p {
     display: none;
   }
 
@@ -371,7 +371,7 @@ p {
 
   .menu ul {
     display: flex;
-    gap: 15px;
+    gap: 10px;
     list-style: none;
   }
 
@@ -505,7 +505,7 @@ p {
   }
 }
 
-@media(max-width: 300px) {
+@media(max-width: 319px) {
   h1 {
     font-family: "Monsieur La Doulaise", cursive;
     font-size: 1.8rem;
@@ -514,7 +514,7 @@ p {
     margin: 15px;
   }
 
-  p {
+  .topo p {
     display: none;
   }
 
