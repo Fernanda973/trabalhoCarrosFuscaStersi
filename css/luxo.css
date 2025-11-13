@@ -11,7 +11,7 @@ body {
 }
 h1 {
   font-family: 'Oswald', sans-serif;
-  font-size: 1.8em;
+  font-size: 1.8rem;
   letter-spacing: 2px;
   color: #fff;
 }
@@ -77,6 +77,14 @@ h1 {
   margin: 20px 0;
   color: #ddd;
   font-size: 1.1rem;
+}
+.botao{
+  color: #fff;
+  align-items: center;
+  padding: 15px 40px;
+  border-radius: 30px;
+  background-color: #d40000;
+  text-decoration: none;
 }
 .galeria {
   display: grid;
